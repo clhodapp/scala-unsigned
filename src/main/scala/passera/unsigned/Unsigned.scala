@@ -21,7 +21,7 @@ trait Unsigned[U <: Unsigned[U, Promoted, SignedPromoted],
   override def doubleValue: Double
 
   // Implementing ScalaNumber
-  protected def isWhole: Boolean = true
+  def isWhole: Boolean = true
   def underlying = this
 
   def +(x: SignedPromoted): SignedPromoted
